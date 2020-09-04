@@ -1,0 +1,254 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    cursor: crosshair;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 220px;
+    text-transform: uppercase;
+    margin: 150px 0px 40px 0px;
+}
+
+h2 {
+    font-size: 60px;
+}
+
+h3 {
+    font-size: 42px;
+}
+
+h4 {
+    font-size: 36px;
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+    font-size: 32px;
+}
+
+a:hover {
+    color: black;
+}
+
+a:active {
+    left: 3px;
+}
+
+
+/* Navbar */
+nav {
+    height: 60px;
+    background: transparent;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 10;
+}
+
+li {
+    display: inline-block;
+    padding: 20px;
+}
+
+.home {
+    float: left;
+    width: 50%;
+}
+
+.menu {
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+
+.star {
+    width: 30px;
+}
+
+#loading {
+    -webkit-animation: rotation 3s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+    from {
+            -webkit-transform: rotate(0deg);
+    }
+    to {
+            -webkit-transform: rotate(359deg);
+    }
+}
+
+.heart {
+    width: 20px;
+}
+
+
+
+
+
+
+/* header section */
+header {
+    position: relative;
+    top: 60px;
+    padding-top: 50px;
+}
+
+.hi-name {
+    text-align: left;
+    margin-left: 4px;
+}
+
+.hi-title {
+    text-align: right;
+    padding-bottom: 15px;
+}
+
+.yellow:hover {
+    background-color: rgb(255, 91, 178);
+    font-style: italic;
+    transition: 2.0s;
+}
+
+
+
+
+/* about section */
+.about {
+    position: relative;
+    top: 60px;
+}
+
+.about-left {
+    float: left;
+    width: 50%;
+    background-image: url("https://freedesignfile.com/upload/2018/04/Black-with-white-lines-abstract-pattern-vectors.jpg");
+    height: 100vh;
+    text-align: center;
+}
+/* image*/
+.elin {
+    max-width: 250px;
+    border: 20px solid deepskyblue;
+    padding: 40px;
+}
+
+.about-right {
+    background-color: yellow;
+    float: right;
+    width: 50%;
+    text-align: center;
+    height: 100vh;
+}
+
+.about-right-text {
+    padding: 90px;
+}
+
+.about-header {
+    background-color: deepskyblue;
+}
+
+button {
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+button:hover {
+    animation: shake 1s infinite;
+  }
+  
+button:active {
+    font-size: 14px;
+  }
+  
+  @keyframes shake {
+    0%{transform: translate(0px,0px) rotate(0deg)}
+    25%{transform: translate(2px,2px) rotate(2deg)}
+    50%{transform: translate(-2px,-2px) rotate(-2deg)}
+    75%{transform: translate(4px,-2px) rotate(4deg)}
+    100%{transform: translate(-2px,2px) rotate(-2deg)}
+  }
+
+
+
+/*Contact section*/
+.contact {
+    position: relative;
+    top: 60px;
+}
+
+.contact-left {
+    background-color: rgb(255, 91, 178);
+    float: left;
+    width: 50%;
+    height: 100vh;
+    text-align: center;
+}
+
+.contact-right {
+    background-color: rgb(255, 91, 178);
+    float: right;
+    width: 50%;
+    text-align: center;
+    height: 100vh;
+}
+
+.contact-right-text {
+    padding: 90px;
+}
+
+.contact-left-text {
+    padding: 90px;
+}
+
+.mail {
+    font-size: 30px;
+}
+
+.fa {
+    margin: 10px;
+    color: black;
+  }
+  
+  .socialmedia {
+    font-size: 3.0rem;
+  }
+
+
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  input[type=submit]:hover {
+    animation: shake 1s infinite;
+  }
