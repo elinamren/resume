@@ -12,21 +12,23 @@ body {
 h1 {
     font-size: 220px;
     text-transform: uppercase;
-    margin: 150px 0px 40px 0px;
+    margin: 50px 0px 40px 0px;
 }
 
 h2 {
     font-size: 60px;
+    font-family: 'Pacifico', cursive;
 }
 
 h3 {
     font-size: 42px;
+    font-family: 'Pacifico', cursive;
 }
 
 h4 {
     font-size: 36px;
-    text-transform: uppercase;
-    margin: 0px;
+    letter-spacing: 0.6em;
+    margin: 150px 0px 0px 0px;
 }
 
 a {
@@ -137,13 +139,18 @@ header {
 }
 /* image*/
 .elin {
-    max-width: 250px;
-    border: 20px solid deepskyblue;
-    padding: 40px;
+    max-width: 410px;
+    border: 5px solid black;
+    margin: 150px;
+}
+
+.elin:hover {
+    max-width: 450px;
+    transition: 0.5px;
 }
 
 .about-right {
-    background-color: yellow;
+    background-color: black;
     float: right;
     width: 50%;
     text-align: center;
@@ -152,16 +159,13 @@ header {
 
 .about-right-text {
     padding: 90px;
-}
-
-.about-header {
-    background-color: deepskyblue;
+    color: white;
 }
 
 button {
-    font-size: 18px;
-    background-color: black;
-    color: white;
+    font-size: 16px;
+    background-color: rgb(255, 91, 178);
+    color: black;
     padding: 12px 20px;
     border: 1px solid black;
     border-radius: 4px;
@@ -169,6 +173,7 @@ button {
 
 button:hover {
     animation: shake 1s infinite;
+    cursor: grab;
   }
   
 button:active {
@@ -186,10 +191,10 @@ button:active {
 
 
 /*Contact section*/
-.contact {
+/*.contact {
     position: relative;
     top: 60px;
-}
+}*/
 
 .contact-left {
     background-color: rgb(255, 91, 178);
@@ -238,6 +243,7 @@ button:active {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
+    font-family: 'Roboto', sans-serif;
   }
   
   input[type=submit] {
@@ -251,4 +257,20 @@ button:active {
   
   input[type=submit]:hover {
     animation: shake 1s infinite;
+    cursor: grab;
   }
+
+  
+/*
+  footer {
+      text-align: center;
+  }
+
+  .foot {
+    height: 10vh;
+    background-color: rgb(255, 91, 178);
+    width: 100%;
+    padding: 20px;
+  }
+
+  */
