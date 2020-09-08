@@ -146,7 +146,6 @@ header {
 
 .elin:hover {
     max-width: 450px;
-    transition: 0.5px;
 }
 
 .about-right {
@@ -261,6 +260,7 @@ button:active {
   }
 
   
+
 /*
   footer {
       text-align: center;
@@ -274,3 +274,33 @@ button:active {
   }
 
   */
+
+
+  @media only screen and (max-width: 600px) {
+        .about-left, .about-right, .contact-left, .contact-right {
+            width: 100%;
+        }
+        a {
+            font-size: 22px;
+        }
+        li {
+            padding: 10px;
+        }
+
+        h1 {
+            font-size: 85px;
+         }
+
+        .elin {
+            max-width: 310px;
+            margin: 150px 0px;
+        }
+    
+        .elin:hover {
+            max-width: 350px;
+        }
+
+        .about-right-text {
+            padding: 20px;
+        }
+    }
