@@ -23,52 +23,60 @@
 
 <body>
     <nav>
-        <ul class="navbar">
-            <div class="home">
-                <li><a href="#"><img class="star" id="loading" src="media/star.png"></a></li>
-            </div>
-            <div class="menu"></div>
-                <li><a href="#c1">about</a></li>
-                <li><img class="heart" src="https://www.seekicon.com/free-icon-download/heart-empty-icon_1.svg"></li>
-                <li><a href="#c2">contact</a></li>
-            </div>
-        </ul>
+        <div class="navigation">
+            <ul class="navbar">
+                <div class="home">
+                    <li><a href="#"><img class="star" id="loading" src="media/star.png"></a></li>
+                </div>
+                <div class="menu"></div>
+                    <li><a href="#c2">about</a></li>
+                    <li><img class="heart" src="https://www.seekicon.com/free-icon-download/heart-empty-icon_1.svg"></li>
+                    <li><a href="#c3">contact</a></li>
+                </div>
+            </ul>
+        </div>
     </nav>
-    <header>
-        <div class="hi-name">
-            <h4>Elin Amrén -</h4>
-        </div>
-        <div class="hi-title">
-            <h1><span class="yellow">Front</span> End<br>Developer<br><span class="yellow">student</span></h1> 
-        </div>
-    </header>
-
-
-    <!--About section-->
-    <section class="about" id="c1">
-        <div class="about-left">
-            <div class="about-left-text">
-                <img class="elin" src="https://civiliansinconflict.org/wp-content/uploads/2017/09/female-silhouette.jpg"/>
+    <main>
+        <header>
+            <div class="hi-name">
+                <h4>Elin Amrén -</h4>
             </div>
-        </div>
-        <div class="about-right">
+            <div class="hi-title">
+                <h1><span class="pink">Front</span> End<br>Developer<br><span class="pink">student</span></h1> 
+            </div>
+        </header>
+
+
+        <!--About section-->
+        <section class="about-left" id="c2">
+            <div class="about-left-text">
+                <img class="elin" src="media/me.jpg" alt="picture of me"/>
+            </div>
+        </section>
+        <section class="about-right">
             <div class="about-right-text">
                 <h2>Hello</h2>
-                <p>Hello Hello yadi yadi yadi Hello Hello yadi yadi yadi Hello Hello yadi yadi yadi Hello Hello yadi yadi yadi Hello Hello yadi yadi yadi Hello Hello yadi yadi yadi Hello Hello yadi yadi yadi Hello Hello yadi yadi yadi Hello Hello yadi yadi yadi Hello Hello yadi yadi yadi</p>
-                <p>Hello Hello yadi yadi yadi Hello Hello yadi yadi yadi Hello Hello yadi yadi yadi Hello Hello yadi yadi yadi Hello Hello yadi yadi yadi Hello Hello yadi yadi yadi Hello Hello yadi yadi yadi Hello Hello yadi yadi yadi Hello Hello yadi yadi yadi Hello Hello yadi yadi yadi</p>
-                <p>Hello Hello yadi yadi yadi Hello Hello yadi yadi yadi Hello Hello yadi yadi yadi Hello Hello yadi yadi yadi Hello Hello yadi yadi yadi Hello Hello yadi yadi yadi Hello Hello yadi yadi yadi Hello Hello yadi yadi yadi Hello Hello yadi yadi yadi Hello Hello yadi yadi yadi</p>
-                <p>Hello Hello yadi yadi yadi Hello Hello yadi yadi yadi Hello Hello yadi yadi yadi Hello Hello yadi yadi yadi Hello Hello yadi yadi yadi Hello Hello yadi yadi yadi Hello Hello yadi yadi yadi Hello Hello yadi yadi yadi Hello Hello yadi yadi yadi Hello Hello yadi yadi yadi</p>
+
+                <p>Elin is a Front End Developer student at Hyper Island based in Stockholm.
+                She is born and rased in Huddinge. She is into skiing, mountain biking and the outdoors.</p>
+                
+                <p>She have been working in five different cities and lived in four countrys.
+                Since a few years she moved back to Stockholm. She have been working since secondary 
+                school and tried several jobs in different industries.</p>
+
+                <p>She have been taking up her old interests for coding and tech and started stady at 
+                Hyper Island in the Front end developer program. She is a social and curious person 
+                with positive attitude and strong will to reach her goals.</p>
+
                 <a href="media/cv.pdf" download>
                     <button>Download resume</button>
                 </a>
             </div>
-        </div>
-    </section>
+        </section>
 
 
-    <!--Contact section-->
-    <section class="contact" id="c3">
-        <div class="contact-left" id="c2">
+        <!--Contact section-->
+        <section class="contact-left" id="c3">
             <div class="contact-left-text">
                 <h2>Contact</h2>
                 <p class="mail">elin.amren@hyperisland.se</p>
@@ -78,27 +86,25 @@
                     <a href="https://codepen.io/elinamren" class="fa fa-codepen" target="_blank"></a>
                 </div>
             </div>
-        </div>
-        <div class="contact-right">
+        </section>
+        <section class="contact-right">
             <div class="contact-right-text">
                 <h3>Get in touch</h3>
                 <div class="contact-form">
-                    <form action=”mailto:elin.amren@hyperisland.se” method=”POST”  enctype=”multipart/form-data” name=”EmailForm”> 
-                        <input type="text" id="fname" name="firstname" placeholder="Name">
-                        <input type="text" id="lname" name="lastname" placeholder="Email">
-                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                        <input type="submit" value="Submit">
+                    <form action=”https://formspree.io/xlepqwwl” method=”POST”> 
+                        <input type="text" name="firstname" placeholder="Name">
+                        <input type="text" name="replyto" placeholder="Email">
+                        <textarea name="subject" placeholder="Write something.." style="height:150px"></textarea>
+                        <input type="submit" value="Send">
                     </form>
                 </div>
             </div>
-        </div>
-        <!-- <footer>
-            <div class="foot">
-                <p>by elin amren september 2020</p>
-            </div>
-        </footer> -->
-    </section>
-    
+        </section>
+        <footer>
+            <p class="pfoot">by elin amren september 2020</p>
+        </footer>
+            
+    </main>
 
 
 

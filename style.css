@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -18,6 +22,7 @@ h1 {
 h2 {
     font-size: 60px;
     font-family: 'Pacifico', cursive;
+    margin: 5px;
 }
 
 h3 {
@@ -56,6 +61,12 @@ nav {
     z-index: 10;
 }
 
+.navigation {
+    max-width: 2000px;
+    margin: auto;
+    height: 100%;
+  }
+
 li {
     display: inline-block;
     padding: 20px;
@@ -93,15 +104,18 @@ li {
     width: 20px;
 }
 
-
-
-
+main {
+    overflow: auto; // makes sure the parent div is not smaller than the children
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 50px;
+    position: relative; // we have the absolute for footer
+  }
 
 
 /* header section */
 header {
-    position: relative;
-    top: 60px;
+    width: 100%;
     padding-top: 50px;
 }
 
@@ -115,7 +129,7 @@ header {
     padding-bottom: 15px;
 }
 
-.yellow:hover {
+.pink:hover {
     background-color: rgb(255, 91, 178);
     font-style: italic;
     transition: 2.0s;
@@ -125,11 +139,6 @@ header {
 
 
 /* about section */
-.about {
-    position: relative;
-    top: 60px;
-}
-
 .about-left {
     float: left;
     width: 50%;
@@ -141,11 +150,7 @@ header {
 .elin {
     max-width: 410px;
     border: 5px solid black;
-    margin: 150px;
-}
-
-.elin:hover {
-    max-width: 450px;
+    margin: 80px;
 }
 
 .about-right {
@@ -157,7 +162,7 @@ header {
 }
 
 .about-right-text {
-    padding: 90px;
+    padding: 80px;
     color: white;
 }
 
@@ -168,6 +173,7 @@ button {
     padding: 12px 20px;
     border: 1px solid black;
     border-radius: 4px;
+    margin: 20px;
 }
 
 button:hover {
@@ -188,19 +194,14 @@ button:active {
   }
 
 
-
 /*Contact section*/
-/*.contact {
-    position: relative;
-    top: 60px;
-}*/
-
 .contact-left {
     background-color: rgb(255, 91, 178);
     float: left;
     width: 50%;
-    height: 100vh;
+    height: 90vh;
     text-align: center;
+    margin-bottom: 10vh;
 }
 
 .contact-right {
@@ -208,7 +209,8 @@ button:active {
     float: right;
     width: 50%;
     text-align: center;
-    height: 100vh;
+    height: 90vh;
+    margin-bottom: 10vh;
 }
 
 .contact-right-text {
@@ -216,7 +218,7 @@ button:active {
 }
 
 .contact-left-text {
-    padding: 90px;
+    padding: 115px 30px 30px 30px;
 }
 
 .mail {
@@ -226,14 +228,14 @@ button:active {
 .fa {
     margin: 10px;
     color: black;
-  }
+}
   
-  .socialmedia {
+.socialmedia {
     font-size: 3.0rem;
-  }
+}
 
 
-  input[type=text], select, textarea {
+input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid black;
@@ -243,64 +245,87 @@ button:active {
     margin-bottom: 16px;
     resize: vertical;
     font-family: 'Roboto', sans-serif;
-  }
+}
   
-  input[type=submit] {
+input[type=submit] {
     background-color: black;
     color: white;
     padding: 12px 20px;
     border: 1px solid black;
     border-radius: 4px;
     width: 100%;
-  }
+}
   
-  input[type=submit]:hover {
+input[type=submit]:hover {
     animation: shake 1s infinite;
     cursor: grab;
-  }
+}
+
+footer {
+  height: 10vh;
+  background-color: rgb(255, 91, 178);
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  padding-top: 15px;
+}
 
   
 
-/*
-  footer {
-      text-align: center;
-  }
 
-  .foot {
-    height: 10vh;
-    background-color: rgb(255, 91, 178);
-    width: 100%;
-    padding: 20px;
-  }
-
-  */
-
-
-  @media only screen and (max-width: 600px) {
-        .about-left, .about-right, .contact-left, .contact-right {
-            width: 100%;
-        }
-        a {
-            font-size: 22px;
-        }
-        li {
-            padding: 10px;
-        }
-
-        h1 {
-            font-size: 85px;
-         }
-
-        .elin {
-            max-width: 310px;
-            margin: 150px 0px;
-        }
-    
-        .elin:hover {
-            max-width: 350px;
-        }
-
-        .about-right-text {
-            padding: 20px;
-        }
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 70px;
+        margin-bottom: 71px;
     }
+
+    h4 {
+        font-size: 22px;
+        margin-top: 160px;
+    }
+
+    a {
+        font-size: 24px;
+    }
+
+    li {
+        padding: 8px;
+    }
+
+    .about-left, .about-right, .contact-left, .contact-right {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .about-left {
+        height: 100vh;
+    }
+
+    .contact-left {
+        height: 70vh;
+    }
+
+    .home {
+        width: 30%;
+    }
+
+    .elin {
+        max-width: 310px;
+        margin: 110px 0px;
+    }
+
+    .about-right-text {
+        padding: 70px 20px;
+    }
+
+    .mail {
+        font-size: 22px;
+    }
+
+    .contact-right-text {
+        padding: 20px;
+    }
+
+  
+}
