@@ -59,6 +59,7 @@ nav {
     top: 0px;
     width: 100%;
     z-index: 10;
+    margin: 0;
 }
 
 .navigation {
@@ -73,14 +74,7 @@ li {
 }
 
 .home {
-    float: left;
     width: 50%;
-}
-
-.menu {
-    float: right;
-    width: 50%;
-    text-align: right;
 }
 
 .star {
@@ -110,7 +104,7 @@ main {
     margin: auto;
     margin-top: 50px;
     position: relative; // we have the absolute for footer
-  }
+}
 
 
 /* header section */
