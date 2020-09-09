@@ -87,10 +87,10 @@ li {
 
 @-webkit-keyframes rotation {
     from {
-            -webkit-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
     }
     to {
-            -webkit-transform: rotate(359deg);
+        -webkit-transform: rotate(359deg);
     }
 }
 
@@ -99,11 +99,11 @@ li {
 }
 
 main {
-    overflow: auto; // makes sure the parent div is not smaller than the children
+    overflow: auto; /* makes sure the parent div is not smaller than the children*/
     max-width: 1000px;
     margin: auto;
     margin-top: 50px;
-    position: relative; // we have the absolute for footer
+    position: relative; /* we have the absolute for footer*/
 }
 
 
