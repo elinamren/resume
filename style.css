@@ -14,9 +14,9 @@ body {
 }
 
 h1 {
-    font-size: 220px;
+    font-size: 14vw;
     text-transform: uppercase;
-    margin: 50px 0px 40px 0px;
+    margin: 0;
 }
 
 h2 {
@@ -33,7 +33,6 @@ h3 {
 h4 {
     font-size: 36px;
     letter-spacing: 0.6em;
-    margin: 150px 0px 0px 0px;
 }
 
 a {
@@ -53,13 +52,15 @@ a:active {
 
 /* Navbar */
 nav {
-    height: 60px;
+    height: 75px;
     background: transparent;
     position: fixed;
     top: 0px;
     width: 100%;
     z-index: 10;
     margin: 0;
+    padding-bottom: 10px;
+    padding-top: 0px;
 }
 
 .navigation {
@@ -103,7 +104,7 @@ main {
     overflow: auto; /* makes sure the parent div is not smaller than the children*/
     max-width: 2000px;
     margin: auto;
-    margin-top: 50px;
+    /*margin-top: 50px;*/
     position: relative; /* we have the absolute for footer */
 }
 
@@ -111,7 +112,8 @@ main {
 /* header section */
 header {
     width: 100%;
-    padding-top: 50px;
+    padding-top: 150px;
+    height: 100vh;
 }
 
 .hi-name {
@@ -141,11 +143,15 @@ header {
     height: 100vh;
     text-align: center;
 }
+
+.about-left-text {
+    padding: 15% 20%;
+}
 /* about image*/
 .elin {
-    max-width: 410px;
+    width: 100%;
+    height: auto;
     border: 5px solid black;
-    margin: 80px;
 }
 
 .about-right {
@@ -224,6 +230,10 @@ button:active {
     margin: 10px;
     color: black;
 }
+
+.fa:hover {
+    color: red;
+}
   
 .socialmedia {
     font-size: 3.0rem;
@@ -270,9 +280,6 @@ footer {
 
 /*responsive for smaller screen*/
 @media only screen and (max-width: 600px) {
-    h1 {
-        font-size: 70px;
-    }
 
     h4 {
         font-size: 22px;
@@ -287,8 +294,12 @@ footer {
         padding: 8px;
     }
 
+    nav {
+        background: rgb(190, 190, 190);
+    }
+
     header {
-        height: 93vh;
+        height: 100vh;
     }
 
     .about-left, .about-right, .contact-left, .contact-right {
@@ -297,7 +308,7 @@ footer {
     }
 
     .about-left {
-        height: 100vh;
+        height: 60vh;
     }
 
     .contact-left {
@@ -306,11 +317,6 @@ footer {
 
     .home {
         width: 30%;
-    }
-
-    .elin {
-        max-width: 310px;
-        margin: 110px 0px;
     }
 
     .about-right-text {
