@@ -167,6 +167,17 @@ header {
     color: white;
 }
 
+.text-link {
+    color: white;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.text-link:hover {
+    color: white;
+    font-style: normal;
+}
+
 button {
     font-size: 16px;
     background-color: rgb(255, 91, 178);
@@ -385,7 +396,7 @@ footer {
     }
 
     .contact-left {
-        height: 50vh;
+        height: 60vh;
         padding-top: 75px;
     }
 
