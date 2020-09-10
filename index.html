@@ -11,6 +11,12 @@
     <link rel="icon" href="media/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://w2ui.com/src/w2ui-1.4.2.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://w2ui.com/src/w2ui-1.4.2.min.css" />
+
+
     <title>Elin</title>
 </head>
 
@@ -39,25 +45,58 @@
 
 
         <!--About section-->
-        <section class="about-left" id="c2">
+        <section class="about-left">
             <div class="about-left-text">
                 <img class="elin" src="media/me.jpg" alt="picture of me"/>
             </div>
         </section>
-        <section class="about-right">
+        <section class="about-right" id="c2">
             <div class="about-right-text">
-                <h2>Hello</h2>
+                <h2>Hi!</h2>
+                <p>
+                    This is Elin, a Front End Developer student at 
+                    <a href="https://www.hyperisland.com/" target="_blank">Hyper Island</a> based in Stockholm. 
+                </p>
+                <p>
+                    She have been working in five different 
+                    cities and lived in four countrys. 
+                </p>
+                <p>
+                    She have two <a href="#popup">kids</a> 
+                    that like adventures as much as she does.
+                </p>
+                <div id="popup" class="overlay light">
+                    <a class="cancel" href="#c2"></a>
+                    <div class="popup-box">
+                      <img class="popup-image" src="media/kids.jpg" width="100%">
+                    </div>
+                </div>
 
-                <p>Elin is a Front End Developer student at Hyper Island based in Stockholm.
-                She is born and rased in Huddinge. She is into skiing, mountain biking and the outdoors.</p>
-                
-                <p>She have been working in five different cities and lived in four countrys.
-                Since a few years she moved back to Stockholm. She have been working since secondary 
-                school and tried several jobs in different industries.</p>
-
-                <p>She have been taking up her old interests for coding and tech and started study at 
-                Hyper Island in the Front end developer program. She is a social and curious person 
-                with positive attitude and strong will to reach her goals.</p>
+                <p>
+                    One of her biggest passions is 
+                    <a href="#popup2">skiing</a>. 
+                    She have been working as a ski instructor 
+                    for many years and traveled the world to 
+                    find the best snow conditions.
+                </p>
+                <div id="popup2" class="overlay light">
+                    <a class="cancel" href="#c2"></a>
+                    <div class="popup-box">
+                      <img class="popup-image" src="media/skiing.jpg" width="100%">
+                    </div>
+                </div>
+                <p>
+                  Recently she found the love of 
+                  <a href="#popup3">mountain biking</a>. 
+                  Riding the bike parks or going out in the 
+                  forest on a bumpy trail breathing the fresh air.
+                </p>
+                <div id="popup3" class="overlay light">
+                    <a class="cancel" href="#c2"></a>
+                    <div class="popup-box">
+                      <img class="popup-image" src="media/bike.jpeg" width="100%">
+                    </div>
+                </div>
 
                 <a href="media/cv.pdf" download>
                     <button>Download resume</button>
@@ -69,7 +108,8 @@
         <!--Contact section-->
         <section class="contact-left" id="c3">
             <div class="contact-left-text">
-                <h2>Contact</h2>
+                <h2>Say hi!</h2>
+                <p>Whant to talk about skiing, bikes or coding? Feel free to email me or contact me on social media!</p>
                 <p class="mail">elin.amren@hyperisland.se</p>
                 <div class="socialmedia">
                     <a href="https://www.linkedin.com/in/elin-amr%C3%A9n-a48612143/" target="_blank" class="fa fa-linkedin"></a>
@@ -92,7 +132,7 @@
             </div>
         </section>
         <footer>
-            <p class="pfoot">by elin amren september 2020</p>
+            <p>by elin amren september 2020</p>
         </footer>
             
     </main>
@@ -100,5 +140,7 @@
 
 
 </body>
+
+<script src="script.js"></script>
 
 </html>
